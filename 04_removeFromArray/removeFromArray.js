@@ -1,6 +1,9 @@
 const removeFromArray = function(array) {
-    let newArray = []
-    newArray = removeElement(array,arguments[1]);
+    let newArray = array;
+    for (let i = 1; i < arguments.length; i++){
+        newArray = removeElement(newArray,arguments[i]);
+    }
+
     return newArray;
 };
 
