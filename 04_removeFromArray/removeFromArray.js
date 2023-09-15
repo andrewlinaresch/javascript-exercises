@@ -10,7 +10,7 @@ const removeFromArray = function(array) {
 function removeElement(array, rElement){
     let newArray = [];
     for (element of array){
-        if (element != rElement){
+        if (element !== rElement){
             newArray.push(element);
         }
     }
